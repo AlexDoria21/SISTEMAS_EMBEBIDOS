@@ -1,0 +1,32 @@
+Serie de tiempo: (conjunto de datos) leer valores pero asiciaros a un tiempo
+
+Ventanas de tiempo (Slicing windows): Fragmentar los datos reales y dividirlos en "n" numero de datos, para asi facilitar el calculo 
+
+Tendencia: La tendencia e el comportamineto a loargo plazo de los datos. Puede ser:
+Creciente:La serie sube con el tiempo
+Decreciente: La serie baja con el tiempo
+Estable: No hay cambios sstematicos a lo largo del tiempo
+
+Estacionanlidad:
+Es un patron que se repite en intervalos regulares (dia, smena, mes)
+Ejemplo: La tempertatura ambiente en un dia sigue un ciclo de 24 horas.
+         La corriente electrica en una fabrica puede ser mayor en ciertos horarios de trabajo
+
+Serie etacionararia:
+Se reifere a una serie de tiempo con estacionalidad(patrones que se repiten).
+
+Eliminacion de tendecia y estacionalidad:
+Si una serie tiene tendeca o estacionalidad, se recomienda quitarles antes de aplicar algoritmos de pronosticos.
+Elimnar tendencia
+
+
+ARIMA(Auroregresive integratd movid average)
+ Modela la relacion entve los valoes pasados y predice los futuros.
+
+Parametros en ARIMA
+ p(AutoRegresico AR): Cuantos valores pasado de la serie se usan para predecir el siguiente.
+ d(Diferenciacion  L): cUANTAS VECES SE RESTA CADA VALOR DEL ANTERIOR PARA HACER LA SERIE ESACIONARIA
+ q(Media Movil - MA): Cuantos errores pasados se incluyen en el modelo.
+ 
+ Ejemplo: 
+ Si la serie es [10,12,15,20,22,25,30], un ARIMA(2,1,1) signififca

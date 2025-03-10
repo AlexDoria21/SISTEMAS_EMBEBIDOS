@@ -1,0 +1,39 @@
+Recocido Simulado (SA)
+// Algoritmo de optimización global
+
+alpha = 0.9
+T = 100
+
+So = SoluciónInicial
+SBest = So
+VBest = evaluar(SBest)
+
+Soluciongeeravecina(sol){
+    //Aplica op, de vecindario
+}
+do{ stemp = SBest
+    saux = SBest  //Guarda la mejor solución
+    Votemp = evaluar(stemp)
+    for (k = 0; k< maxIter; k++){
+        so = generavecina(stemp)
+        Vo = evaluar(So)
+        dif = Vo - Votemp
+        if dif < 0 {
+            Votemp = Vo
+            stemp = saux
+        }
+        else {
+            i = aleatorio Uniforme(0,1)
+            if i < exp(-dif/T){
+                stemp = So
+                stemp = saux
+            }
+            T = T * alpha
+        }
+    }
+if (Votemp < VBest){
+    SBest = stemp
+    VBest = Votemp
+
+    while (T > umbral)
+}

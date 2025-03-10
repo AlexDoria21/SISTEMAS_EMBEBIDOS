@@ -1,0 +1,20 @@
+Energia Minimización
+
+Cx es el costo de la energía en el tiempo x
+Se agrega otro Cx ala fomula por que es el costo de la energía en el tiempo x
+Va es el valor de la energía en el tiempo a
+Vo es el valor de la energía en el tiempo o
+Vmin es el valor mínimo de la energía
+Vmax es el valor máximo de la energía
+
+Eo = {Cx + Cx(Va-Vo)} If(Va>Vo)
+                        else
+
+Emin = {Cx+Cx(Va-Vmax)} If(Va>Vmax)
+                        else
+
+Emax = {Cx+Cx(Va-Vmin)} If(Va<Vmin)
+                        else
+
+Teniendo Emin y Emax se neceitaria Normalizacion para obtener en donde se encunetra Eo
+1 - (Emax - Eo/ Emax - Emin)

@@ -1,0 +1,10 @@
+Maximización
+
+Eo= Cx+Cx (Vo-Va)     if Va <= Vo 
+         0               else
+    3 + 3(150) = 3 + 450 = $453
+Emin = Cx + Cx (Vmin - Va)     if Va<=Vmin
+         0                         else
+
+Emax = Cx + Cx (Vmax-Va)       if Va<= Vmax
+        0                           else

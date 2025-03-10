@@ -1,0 +1,41 @@
+Heuristica
+Busqueda Local
+
+So=Solucion Inical
+SBest = So
+VBest = Fo(So)
+
+Ej. de funcion objetivo = Fo
+Suma de cadrados
+
+X = [ 3 1 2 5 4]
+
+------------------------------------
+Funcion.
+Vecindario
+
+[3  1 2 5 4 ]
+
+Index = 2
+
+rnd (min, max) = 4
+
+nSolucion = 3 1 4 5 4
+
+-----------------------------------------
+it = 0
+while it < CondicionParo[100] && VBest != 0 {
+    nSolucion = vecindario(So)
+    VnSolucion = Fo(nsolution)
+
+    if VnSolucion < VBest{
+        vBest = VnSolucion
+        SBest = nSolucion
+    }
+So = nSolucion
+}
+print(VBest)
+print(SBest)
+ 
+#Verificar que no sobreescriba nSolucion
+#Practica mañana es intregar esto pero con la FUNCION OBJETIO DE SATISFACCION Y ENERGIA

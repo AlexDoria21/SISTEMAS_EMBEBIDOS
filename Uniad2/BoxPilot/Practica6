@@ -1,0 +1,15 @@
+Prmedio ponderado
+*Paso1 Recperar datos simuldos para un dia(ej.Lunes) los cuales forman un vector
+Se len 30 veces cada 15 segundos  y de esos datos sacar las mediana y ese seria un dato 
+*Paso2 Limpieza de datos, coporbar que no haya datos vacos
+en dado caso que haya usar interpolacion lineal, en dado caso que el primer valor o el ultimo valor no se ejecute
+Identificar Outliners
+BoxPlot(Durante el diseño)
+Si hay outliers a dichos outiers hay que tratarlos
+interpolacion lineal (El alfa se saca del sistema exponencial simple)
+*Paso3 Sistemas exponencial simple
+donde en ese nuevo vector el unico primerdato de ese lector sera el valor 0 del vector original de las leida de caada 15 segundos
+para i=1, 1<n; i++ entonces
+nvalor = alfa (vector¨[i])+ (1-alfa)(nvector[i-1])
+nvector.append(nvalor)
+if nvalor
